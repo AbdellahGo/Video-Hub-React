@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+
+.root {
+  height: 100% !important;
+}
+
+a {
+  text-decoration: none!important ;
+}
+li {
+  list-style-type: none !important;
+}
+button, input {
+  outline :none;
+  border: none;
+}
+
+i:not(.check) {
+  color: #b2000f;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: black;
+}
+
+.side-bar {
+  height: calc(100vh - 83.2px);
+  margin-top: 80px;
+  position: fixed;
+  z-index: 100;
+  background-color: black;
+  padding-bottom: 80px;
+}
+
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+button.search:hover {
+  background-color: #b2000f !important;
+}
+button.search:hover i {
+  color: white;
+}
+
+.side-bar {
+  border: none;
+  border-right: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  .side-bar {
+    border: none;
+    border-bottom: 1px solid #333;
+  }
+}
+
+.side-bar {
+  overflow-y: scroll;
+}
+@media (max-width: 768px) {
+  .side-bar  {
+    overflow-y: unset;
+    overflow-x: scroll;
+  }
+}
+
+.side-bar .categories li {
+  min-width: fit-content;
+  border: 1px solid #b2000f;
+}
+
+.side-bar .categories li:hover,
+.side-bar .categories li.active {
+  background-color: #e60008;
+}
+.side-bar .categories li:hover i,
+.side-bar .categories li.active i {
+  color: white;
+}
+@media (max-width: 768px) {
+  .side-bar {
+    height: auto;
+    padding-bottom: unset;
+  }
+}
+.side-bar::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.side-bar::-webkit-scrollbar-track {
+  background: black;
+}
+.side-bar::-webkit-scrollbar-thumb {
+  background: #999;
+}
+.videos {
+  margin-top: 83px;
+}
+
+@media (max-width: 768px) {
+  .videos {
+    margin-top: 170px;
+  }
+}
+.videos h1 span {
+  color: #e60008;
+}
+.search-feed {
+  margin-top: 83px;
+}
+
+.card-parent .card {
+  height: 100% !important;
+}
+
+.card img {
+  max-height: 350px;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .channel-detail .card-parent {
+    width: 40%;
+  }
+}
+.react-player {
+  height: 80% !important;
+}
+
+footer {
+    border-top: 1px solid #333;
+    z-index: 101;
+    background-color: black;
+}
